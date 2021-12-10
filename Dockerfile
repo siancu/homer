@@ -11,7 +11,7 @@ ARG VUE_APP_DISABLE_PWA=false
 RUN yarn build
 
 # production stage
-FROM alpine:3.11
+FROM alpine:3.15
 
 ENV USER darkhttpd
 ENV GROUP darkhttpd
