@@ -20,7 +20,7 @@ jobs:
         id: prepare
         run: |
           IMAGE_NAME=siancu/homer
-          TAGS=${IMAGE_NAME}:${GITHUB_REF#refs/tags/ng-},${IMAGE_NAME}:latest
+          TAGS=${IMAGE_NAME}:latest
           INSPECT_TAG=${IMAGE_NAME}:latest
 
           echo ::set-output name=tags::${TAGS}
